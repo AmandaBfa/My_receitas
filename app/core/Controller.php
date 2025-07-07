@@ -1,0 +1,1 @@
+<!-- vai extender essa classe em todos os controllers (como homeController, footerController)  -->

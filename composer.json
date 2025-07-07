@@ -1,0 +1,15 @@
+{
+    "name": "amanda/my_receitas",
+    "autoload": {
+        "psr-4": {
+            "Amanda\\MyReceitas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amanda Barbosa",
+            "email": "amandinhabarbosa2005@gmail.com"
+        }
+    ],
+    "require": {}
+}

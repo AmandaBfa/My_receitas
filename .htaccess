@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Redireciona tudo para index.php, exceto arquivos e pastas reais
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# .htaccess "liga" o roteamento do Slim dentro do Apache, permitindo URLs limpas e controle completo das rotas..htaccess "liga" o roteamento do Slim dentro do Apache, permitindo URLs limpas e controle completo das rotas.

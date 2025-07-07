@@ -10,7 +10,3 @@ function dd($p = []) {
     die();
 }
 
-// function getBaseUrl() {
-//     // Retorna a URL base do sistema
-//     return BASE_URL;
-// }

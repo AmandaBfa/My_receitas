@@ -2,7 +2,7 @@
     "name": "amanda/my_receitas",
     "autoload": {
         "psr-4": {
-            "Amanda\\MyReceitas\\": "src/"
+            "App\\": "app/"
         }
     },
     "authors": [

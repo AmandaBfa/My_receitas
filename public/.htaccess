@@ -5,4 +5,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [QSA,L]
 
+Options -Indexes
 # .htaccess "liga" o roteamento do Slim dentro do Apache, permitindo URLs limpas e controle completo das rotas..htaccess "liga" o roteamento do Slim dentro do Apache, permitindo URLs limpas e controle completo das rotas.

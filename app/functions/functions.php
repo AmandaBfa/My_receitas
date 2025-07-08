@@ -2,11 +2,18 @@
 
 <?php
 
-function dd($p = []) {
-    // Função para depuração de dados
+function dd($p = [])
+{
     echo '<pre>';
     print_r($p);
     echo '</pre>';
     die();
 }
 
+// function dd($p = []) {
+//     // Função para depuração de dados
+//     echo '<pre>';
+//     print_r($p);
+//     echo '</pre>';
+//     die();
+// }

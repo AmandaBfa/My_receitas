@@ -2,7 +2,9 @@
 
 namespace App\Site\Controller;
 
-class HomeController
+use App\Core\Controller;
+
+class HomeController extends Controller
 {
     public function __construct()
     {
@@ -11,7 +13,8 @@ class HomeController
 
     public function index()
     {
-        // This method can be used to render the home page
-        echo 'Estamos na index <br>';
+        $this->load('home/main', [
+            'teste' => '1234',
+        ]);
     }
 }

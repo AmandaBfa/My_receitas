@@ -1,20 +1,16 @@
 <?php
 
-namespace App\Site\Controller;
+namespace app\site\controller;
 
 use App\Core\Controller;
+// use app\site\model\ReceitaModel;
 
 class HomeController extends Controller
 {
-    public function __construct()
-    {
-        echo 'teste 123<br>';
-    }
+    public function __construct() {}
 
     public function index()
     {
-        $this->load('home/main', [
-            'teste' => '1234',
-        ]);
+        $this->load('home/main', ['teste' => '1234']);
     }
 }

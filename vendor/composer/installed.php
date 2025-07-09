@@ -3,7 +3,7 @@
         'name' => 'amanda/my_receitas',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '8b0750343f6873a76f6008ca9966d6e4ab7b7867',
+        'reference' => '306179e4274a5af664faea16f97f51c537988788',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'amanda/my_receitas' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '8b0750343f6873a76f6008ca9966d6e4ab7b7867',
+            'reference' => '306179e4274a5af664faea16f97f51c537988788',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

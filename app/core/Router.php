@@ -3,7 +3,7 @@
 // é bem engessado, não tem como mudar o nome da classe, tem que ser assim
 // ele é responsável por carregar os controllers, models e views
 
-namespace App\Core;
+namespace App\core;
 
 class Router
 {
@@ -68,6 +68,10 @@ class Router
                 ],
                 $this->getParams()
             );
+        } else {
+            // Carrega o HomeController por padrão
+            $controller = new \App\Site\Controller\HomeController();
+            $controller->index();
         }
     }
 

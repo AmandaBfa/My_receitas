@@ -11,7 +11,7 @@
 
 <hr>
 
-<form action="{{BASE}}receita/insert" onsubmit="return validar(false)" method="post">
+<form action="{{BASE}}receita/inserir" onsubmit="return validar(false)" method="post">
     <div class="row mt-4">
         <div class="col-md-5 mt-3">
             <div class="form-group">
@@ -31,7 +31,7 @@
                 <select name="slCategoria" id="slCategoria" class="form-control">
                     <option value="">Selecione uma categoria</option>
                     {% for categoria in listaCategorias %}
-                    <option value="{{categoria.id}}" {% if categoria.id == categoriaSelecionada %}selected{% endif %}>{{categoria.titulo}}</option>
+                    <option value="{{categoria.id}}">{{categoria.titulo}}</option>
                     {% endfor %}
                 </select>
             </div>
@@ -74,15 +74,7 @@
 <script src="{{BASE}}vendor/ckeditor/ckeditor.js"></script>
 
 <script>
-    CKEDITOR.replace('txtDescricao', {
-        height: 300,
-        filebrowserUploadUrl: '{{BASE}}receita/upload',
-        filebrowserUploadMethod: 'form'
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        getValueById('txtTitulo').focus();
-    });
+    CKEDITOR.replace('txtDescricao');
 </script>
 
 {% endblock %}

@@ -10,10 +10,8 @@ function dd($p = [])
     die();
 }
 
-// function dd($p = []) {
-//     // Função para depuração de dados
-//     echo '<pre>';
-//     print_r($p);
-//     echo '</pre>';
-//     die();
-// }
+function redirect($url)
+{
+    header("Location: " . $url);
+    exit();
+}

@@ -3,7 +3,7 @@
 namespace App\site\model;
 
 use App\core\view;
-use App\core\model; // Adicione esta linha
+use App\core\model;
 
 
 class CategoriaModel
@@ -48,6 +48,21 @@ class CategoriaModel
         $dr = $this->pdo->executeQueryOneRow($sql, [':id' => $categoriaId]);
 
         return $this->collection($dr);
+    }
+
+    public function lerTodos(int $categoriaId)
+    {
+        $sql = "SELECT * FROM categoria ORDER BY titulo ASC";
+
+        $dt = $this->pdo->executeQuery($sql);
+
+        $lista = [];
+
+        foreach ($dt as $dr) {
+            $lista[] = $this->collection($dr);
+        }
+
+        return $lista;
     }
 
     private function collection($arr)

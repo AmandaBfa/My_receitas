@@ -38,6 +38,11 @@
             <button type="submit" value="Adicionar" class="btn btn-primary w-25">Adicionar</button>
         </div>
     </div>
+    <div class="mt-4 text-end">
+        <a href="{{BASE}}receita/" class="btn btn-outline-secondary w-25">
+            <i class="bi bi-box-arrow-left me-2"></i>Voltar
+        </a>
+    </div>
 </form>
 
 <script src="{{BASE}}js/categoria.js"></script>

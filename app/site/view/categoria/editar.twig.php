@@ -36,8 +36,16 @@
 
     <div class="row mt-5">
         <div class="col-md-12 text-end">
-            <button type="submit" value="Editar" class="btn btn-primary w-25">editar</button>
+            <a href="{{BASE}}receita/" class="btn btn-primary w-25">
+                Editar
+            </a>
+            <!-- <button type="submit" value="Editar" class="btn btn-primary w-25">editar</button> -->
         </div>
+    </div>
+    <div class="mt-4 text-end">
+        <a href="{{BASE}}receita/adicionar" class="btn btn-outline-secondary w-25">
+            <i class="bi bi-box-arrow-left me-2"></i>Voltar
+        </a>
     </div>
 </form>
 

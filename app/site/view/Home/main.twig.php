@@ -7,9 +7,7 @@
 {% endblock %}
 
 {% block body %}
-<!-----------------------------------------------------------------------
-            Exemplo pratico para home feita pelo chatgpt 
- ------------------------------------------------------------------------>
+
 <h1 class="mb-4">Bem-vindo ao <strong>My Receitas</strong> 🥘</h1>
 
 <p class="lead">Aqui você encontra receitas simples, rápidas e deliciosas para o dia a dia!</p>
@@ -19,39 +17,24 @@
 <h2 class="mt-5">Receitas em destaque 🍽️</h2>
 
 <div class="row mt-3">
-    <div class="col-md-4">
-        <div class="card">
-            <img src="{{BASE}}img/bolo.jpg" class="card-img-top" alt="Bolo de Cenoura">
-            <div class="card-body">
-                <h5 class="card-title">Bolo de Cenoura</h5>
-                <p class="card-text">Um clássico fofinho com cobertura de chocolate!</p>
-                <a href="#" class="btn btn-primary">Ver receita</a>
-            </div>
-        </div>
-    </div>
+    {% set receitas = [
+        {'img': 'bolo_de_cenoura.webp', 'titulo': 'Bolo de Cenoura', 'descricao': 'Um clássico fofinho com cobertura de chocolate!'},
+        {'img': 'lasanha_de_carne.webp', 'titulo': 'Lasanha de Carne', 'descricao': 'Camadas de sabor que agradam toda a família.'},
+        {'img': 'salada_tropical_1.jpg', 'titulo': 'Salada Tropical', 'descricao': 'Refrescante, colorida e cheia de vitaminas.'}
+    ] %}
 
-    <div class="col-md-4">
-        <div class="card">
-            <img src="{{BASE}}img/lasanha.jpg" class="card-img-top" alt="Lasanha de carne">
-            <div class="card-body">
-                <h5 class="card-title">Lasanha de Carne</h5>
-                <p class="card-text">Camadas de sabor que agradam toda a família.</p>
-                <a href="#" class="btn btn-primary">Ver receita</a>
+    {% for receita in receitas %}
+    <div class="col-md-4 d-flex">
+        <div class="card h-100 shadow-sm">
+            <img src="{{BASE}}img/{{receita.img}}" class="card-img-top" alt="{{receita.titulo}}">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{receita.titulo}}</h5>
+                <p class="card-text flex-grow-1">{{receita.descricao}}</p>
+                <a href="#" class="btn btn-primary mt-auto">Ver receita</a>
             </div>
         </div>
     </div>
-
-    <div class="col-md-4">
-        <div class="card">
-            <img src="{{BASE}}img/salada.jpg" class="card-img-top" alt="Salada tropical">
-            <div class="card-body">
-                <h5 class="card-title">Salada Tropical</h5>
-                <p class="card-text">Refrescante, colorida e cheia de vitaminas.</p>
-                <a href="#" class="btn btn-primary">Ver receita</a>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>
-
 
 {% endblock %}

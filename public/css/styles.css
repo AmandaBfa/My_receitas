@@ -4,3 +4,14 @@
     margin: 0 auto;
     padding: 10px;
 }
+
+.img-thumb{
+    max-height: 210px;
+    filter: grayscale(0.3);
+    transition: all .3s;
+}
+
+.img-thumb:hover{
+    filter: grayscale(0);
+    box-shadow: 0 0 10px red;
+}

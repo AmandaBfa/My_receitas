@@ -20,7 +20,7 @@
 <div class="row mt-4">
     {% for receita in receitas %}
     <div class="col-md-4 d-flex mb-3">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 w-100 shadow-sm">
             <div class="card-header">{{receita.titulo}}</div>
             <div class="card-body d-flex flex-column">
                 <p class="card-text flex-grow-1">{{receita.linhafina}}</p>

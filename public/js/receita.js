@@ -24,6 +24,11 @@ function validar(validateId) {
         valid = false;
     }
     
+    if(getValueById('txtThumb').length < 1) {
+        appendHTMLById('dvAlert', '<div class="text-warning"><i class="bi bi-exclamation-circle me-1 w-25"></i>Informe uma thumbnail.</div>');
+        valid = false;
+    }
+    
     if(CKEDITOR.instances['editor1'].getData(). length < 10) {
         appendHTMLById('dvAlert', '<div class="text-warning"><i class="bi bi-exclamation-circle me-1 w-25"></i>Conteúdo inválido.</div>');
         valid = false;

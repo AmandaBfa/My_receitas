@@ -1,16 +1,21 @@
 <?php
 
-namespace app\site\controller;
+namespace App\site\controller;
 
-use App\Core\Controller;
-// use app\site\model\ReceitaModel;
+use App\core\Controller;
+use App\site\model\ReceitaModel;
 
 class HomeController extends Controller
 {
-    public function __construct() {}
-
     public function index()
     {
-        $this->load('home/main', ['teste' => '1234']);
+        $receitaModel = new ReceitaModel();
+
+        $receitas = [
+            $receitaModel->lerTodas()
+
+        ];
+
+        $this->load('home/main', ['listaReceitas' => $receitas]);
     }
 }

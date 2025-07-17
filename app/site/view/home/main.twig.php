@@ -16,25 +16,24 @@
 
 <h2 class="mt-5">Receitas em destaque 🍽️</h2>
 
-<div class="row mt-3">
-    {% set receitas = [
-        {'img': 'bolo_de_cenoura.webp', 'titulo': 'Bolo de Cenoura', 'descricao': 'Um clássico fofinho com cobertura de chocolate!'},
-        {'img': 'lasanha_de_carne.webp', 'titulo': 'Lasanha de Carne', 'descricao': 'Camadas de sabor que agradam toda a família.'},
-        {'img': 'salada_tropical_1.jpg', 'titulo': 'Salada Tropical', 'descricao': 'Refrescante, colorida e cheia de vitaminas.'}
-    ] %}
-
+{% for receitas in listaReceitas %}
+<div class="row mt-4">
     {% for receita in receitas %}
-    <div class="col-md-4 d-flex">
+    <div class="col-md-4 d-flex mb-3">
         <div class="card h-100 shadow-sm">
-            <img src="{{BASE}}img/{{receita.img}}" class="card-img-top" alt="{{receita.titulo}}">
+            <div class="card-header">{{receita.titulo}}</div>
             <div class="card-body d-flex flex-column">
-                <h5 class="card-title">{{receita.titulo}}</h5>
-                <p class="card-text flex-grow-1">{{receita.descricao}}</p>
-                <a href="#" class="btn btn-primary mt-auto">Ver receita</a>
+                <p class="card-text flex-grow-1">{{receita.linhafina}}</p>
+                <a href="{{BASE}}receita/ver/{{receita.slug}}">
+                    <img src="{{receita.thumb}}" alt="{{receita.titulo}}" class="w-100 img-thumb" />
+                </a>
             </div>
+            <a href="{{BASE}}receita/ver/{{receita.slug}}" class="btn btn-outline-info w-100 mt-2">Acessar</a>
         </div>
     </div>
     {% endfor %}
 </div>
+{% endfor %}
+
 
 {% endblock %}

@@ -12,7 +12,7 @@
         <p class="text-muted mt-3">{{receita.linhaFina}}</p>
     </div>
     <div class="col-md-4 text-end">
-        <a href="{{ BASE }}receita/editar/{{ receita.id }}" class="btn btn-outline-primary me-2 w-50">
+        <a href="{{BASE}}receita/editar/{{receita.id}}" class="btn btn-outline-primary me-2 w-50">
             <i class="bi bi-pencil"></i> Editar Receita
         </a>
         <a href="{{ BASE }}receita/" class="btn btn-outline-primary w-25">

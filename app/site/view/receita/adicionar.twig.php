@@ -38,6 +38,11 @@
             </div>
 
             <div class="col-md-12">
+                <label for="txtThumb">Thumbnail</label>
+                <input type="text" class="form-control" id="txtThumb" name="txtThumb" placeholder="https://mysite.com/img/img.jpg" minlength="1" maxlength="100">
+            </div>
+
+            <div class="col-md-12">
                 <label for="txtDescricao" class="form-label">Modo de Preparo</label>
                 <textarea id="txtDescricao" name="txtDescricao"></textarea>
             </div>

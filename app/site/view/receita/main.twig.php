@@ -63,7 +63,7 @@
                         <a href="{{BASE}}receita/editar/{{receita.id}}" class="btn btn-primary w-25" title="Editar">
                             <i class="bi bi-pencil"></i>
                         </a>
-                        <a href="{{BASE}}receita/ver/{{receita.id}}" class="btn btn-info w-25" title="Visualizar">
+                        <a href="{{BASE}}receita/ver/{{receita.slug}}" class="btn btn-info w-25" title="Visualizar">
                             <i class="bi bi-eye"></i>
                         </a>
                     </td>

@@ -6,12 +6,23 @@
 }
 
 .img-thumb{
-    max-height: 210px;
-    filter: grayscale(0.3);
-    transition: all .3s;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
 }
 
 .img-thumb:hover{
-    filter: grayscale(0);
-    box-shadow: 0 0 10px red;
+    transform: scale(1.03);
 }
+
+/* .img-thumb {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.img-thumb:hover {
+    transform: scale(1.03);
+} */

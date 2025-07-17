@@ -4,19 +4,32 @@
 
 
 {% block body %}
-<h1>Sobre o My Receitas 🍰</h1>
+<div class="container my-5">
 
-<p class="lead">Nossa missão é simples: compartilhar amor em forma de comida!</p>
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5">🍰 Sobre o My Receitas</h1>
+        <p class="lead text-muted mt-3">Nossa missão é simples: <strong>compartilhar amor em forma de comida!</strong></p>
+    </div>
 
-<hr>
+    <p class="fs-5 mb-4">
+        O <strong>My Receitas</strong> nasceu da vontade de guardar as receitas da vovó, dos amigos e até aquelas invenções de madrugada que deram certo (ou quase 😅).
+    </p>
 
-<p>O <strong>My Receitas</strong> nasceu da vontade de guardar as receitas da vovó, dos amigos e até aquelas invenções de madrugada que deram certo (ou quase 😅).</p>
+    <p class="fs-5 mb-4">
+        Aqui você encontra pratos para todos os gostos: do <strong>café da manhã reforçado</strong> ao <strong>jantar preguiçoso de domingo</strong>. Nosso objetivo é facilitar a vida de quem ama cozinhar — ou de quem está só tentando sobreviver com o que tem na geladeira.
+    </p>
 
-<p>Aqui você encontra pratos para todos os gostos: do café da manhã reforçado ao jantar preguiçoso de domingo. Nosso objetivo é facilitar a vida de quem ama cozinhar — ou de quem está só tentando sobreviver com o que tem na geladeira.</p>
+    <p class="fs-5 mb-4">
+        Este site foi feito com carinho por uma <strong>desenvolvedora faminta e movida a café</strong>, com o apoio de muitos testes (e algumas panelas queimadas no caminho). 😄
+    </p>
 
-<p>Este site foi feito com carinho por uma desenvolvedora faminta e movida a café, com o apoio de muitos testes (e algumas panelas queimadas no caminho). 😄</p>
+    <p class="fs-5 mb-4">
+        Se você tem uma receita favorita ou quer compartilhar aquela dica infalível, fique à vontade para entrar em contato. <strong>Vamos construir juntos o caderno de receitas mais saboroso da internet!</strong> 🍳📖
+    </p>
 
-<p>Se você tem uma receita favorita ou quer compartilhar aquela dica infalível, fique à vontade para entrar em contato. Vamos construir juntos o caderno de receitas mais saboroso da internet!</p>
+    <p class="text-center text-muted mt-5">
+        <small>PS: Nenhuma cebola foi maltratada na construção deste site. 🧅</small>
+    </p>
 
-<p class="text-muted"><small>PS: Nenhuma cebola foi maltratada na construção deste site.</small></p>
+</div>
 {% endblock %}
